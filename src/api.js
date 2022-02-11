@@ -1,9 +1,8 @@
-
+const {REACT_APP_API_KEY} = process.env
 
 const BASE_URL = 'https://api.giphy.com/v1/gifs'
 const SEARCH_URL = `${BASE_URL}/search`
 const TRENDING_URL = `${BASE_URL}/trending`
-const REACT_APP_API_KEY = 'tVaJe9QRTL6VZp9xhBkogbNWFTI9hYnJ'
 
 
 export async function getTrendingItem () {
@@ -17,6 +16,7 @@ export async function getTrendingItem () {
     } catch(err) {
         console.log(err)
     }
+    debugger
     return json.data
 }
 
