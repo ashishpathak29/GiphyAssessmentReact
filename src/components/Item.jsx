@@ -1,5 +1,5 @@
 
-import {useCallback} from "react";
+import React, { useCallback } from "react";
 
 export default  function Item ({item, onClick}) {
     const {title, images: {downsized_medium}} = item
