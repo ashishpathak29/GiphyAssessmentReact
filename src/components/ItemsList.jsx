@@ -1,6 +1,6 @@
+import React, {useCallback, useState} from "react";
 import { Modal } from 'antd';
 import Item from './Item'
-import {useCallback, useState} from "react";
 
 export default function ItemsList ({items}) {
     const [isModalShown, setModalShown] = useState(false)

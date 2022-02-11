@@ -1,4 +1,4 @@
-import {useCallback, useState} from "react";
+import React, { useState } from "react";
 
 export default function SearchBar ({onSubmit}) {
     const [query, setQuery] = useState('')
@@ -12,9 +12,9 @@ export default function SearchBar ({onSubmit}) {
     }, [query, onSubmit])
 
     return (
-        <section>
+        <div>
             <input type="text" onChange={handleChange} placeholder={'please input text'}/>
             <button class="button" onClick={handleSubmit}> Search</button>
-        </section>
+        </div>
     )
 }
