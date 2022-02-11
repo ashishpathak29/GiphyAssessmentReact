@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useCallback } from "react";
 
 export default function SearchBar ({onSubmit}) {
     const [query, setQuery] = useState('')
