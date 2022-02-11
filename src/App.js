@@ -1,6 +1,6 @@
 import 'antd/dist/antd.css';
 import './App.css';
-import {getItems, getTrendingItem, searchItems} from "./api";
+import { getTrendingItem, searchItems} from "./api";
 import Searchbar from './components/SearchBar'
 import ItemsList from './components/ItemsList'
 import {useCallback, useEffect, useState} from "react";
